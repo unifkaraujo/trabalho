@@ -20,3 +20,8 @@ void MainWindow::on_pushButton_clicked()
 {
     alocacao form2; form2.exec();
 }
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    quartos form3; form3.exec();
+}
