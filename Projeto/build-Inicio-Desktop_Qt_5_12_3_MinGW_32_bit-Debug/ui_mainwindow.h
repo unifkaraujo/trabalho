@@ -32,7 +32,7 @@ public:
     QPushButton *pushButton;
     QLabel *label;
     QPushButton *pushButton_2;
-    QLabel *label_2;
+    QLabel *label_18;
     QMenuBar *menuBar;
     QMenu *menuMenu;
     QToolBar *mainToolBar;
@@ -51,9 +51,9 @@ public:
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         pushButton = new QPushButton(centralWidget);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(140, 230, 121, 21));
-        pushButton->setStyleSheet(QString::fromUtf8("font-family: verdana;\n"
-"color:black;"));
+        pushButton->setGeometry(QRect(410, 130, 121, 71));
+        pushButton->setStyleSheet(QString::fromUtf8("background-color:white;\n"
+"border-radius:1px;"));
         label = new QLabel(centralWidget);
         label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(0, -30, 661, 341));
@@ -61,18 +61,18 @@ public:
         label->setScaledContents(true);
         pushButton_2 = new QPushButton(centralWidget);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setGeometry(QRect(140, 250, 151, 21));
-        pushButton_2->setStyleSheet(QString::fromUtf8("font-family: verdana;\n"
-"color:black;"));
-        label_2 = new QLabel(centralWidget);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setGeometry(QRect(310, 40, 71, 31));
-        label_2->setStyleSheet(QString::fromUtf8(""));
+        pushButton_2->setGeometry(QRect(410, 210, 151, 41));
+        pushButton_2->setStyleSheet(QString::fromUtf8("background-color:white;\n"
+"border-radius:1px;"));
+        label_18 = new QLabel(centralWidget);
+        label_18->setObjectName(QString::fromUtf8("label_18"));
+        label_18->setGeometry(QRect(0, 0, 201, 51));
+        label_18->setStyleSheet(QString::fromUtf8("background-color:white;"));
         MainWindow->setCentralWidget(centralWidget);
         label->raise();
         pushButton->raise();
         pushButton_2->raise();
-        label_2->raise();
+        label_18->raise();
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
         menuBar->setGeometry(QRect(0, 0, 661, 21));
@@ -103,7 +103,7 @@ public:
         pushButton->setText(QApplication::translate("MainWindow", "Fa\303\247a a sua reserva", nullptr));
         label->setText(QString());
         pushButton_2->setText(QApplication::translate("MainWindow", "Consulte nossos quartos", nullptr));
-        label_2->setText(QApplication::translate("MainWindow", "TextLabel", nullptr));
+        label_18->setText(QApplication::translate("MainWindow", "<center><b>Hotel Quality", nullptr));
         menuMenu->setTitle(QApplication::translate("MainWindow", "Menu", nullptr));
     } // retranslateUi
 

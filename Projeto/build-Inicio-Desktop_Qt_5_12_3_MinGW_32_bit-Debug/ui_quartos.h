@@ -14,6 +14,7 @@
 #include <QtWidgets/QCheckBox>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
@@ -24,7 +25,7 @@ class Ui_quartos
 {
 public:
     QPushButton *pushButton;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout;
     QCheckBox *checkBox;
@@ -38,6 +39,7 @@ public:
     QCheckBox *checkBox_8;
     QCheckBox *checkBox_9;
     QCheckBox *checkBox_10;
+    QLabel *label;
 
     void setupUi(QDialog *quartos)
     {
@@ -46,36 +48,39 @@ public:
         quartos->resize(661, 361);
         pushButton = new QPushButton(quartos);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(500, 320, 151, 23));
-        widget = new QWidget(quartos);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(60, 300, 364, 46));
-        verticalLayout = new QVBoxLayout(widget);
+        pushButton->setGeometry(QRect(400, 310, 151, 23));
+        pushButton->setStyleSheet(QString::fromUtf8("background-color:white;\n"
+"border-radius:1px;"));
+        layoutWidget = new QWidget(quartos);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(289, 250, 361, 46));
+        verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        checkBox = new QCheckBox(widget);
+        checkBox = new QCheckBox(layoutWidget);
         checkBox->setObjectName(QString::fromUtf8("checkBox"));
+        checkBox->setStyleSheet(QString::fromUtf8(""));
 
         horizontalLayout->addWidget(checkBox);
 
-        checkBox_2 = new QCheckBox(widget);
+        checkBox_2 = new QCheckBox(layoutWidget);
         checkBox_2->setObjectName(QString::fromUtf8("checkBox_2"));
 
         horizontalLayout->addWidget(checkBox_2);
 
-        checkBox_3 = new QCheckBox(widget);
+        checkBox_3 = new QCheckBox(layoutWidget);
         checkBox_3->setObjectName(QString::fromUtf8("checkBox_3"));
 
         horizontalLayout->addWidget(checkBox_3);
 
-        checkBox_4 = new QCheckBox(widget);
+        checkBox_4 = new QCheckBox(layoutWidget);
         checkBox_4->setObjectName(QString::fromUtf8("checkBox_4"));
 
         horizontalLayout->addWidget(checkBox_4);
 
-        checkBox_5 = new QCheckBox(widget);
+        checkBox_5 = new QCheckBox(layoutWidget);
         checkBox_5->setObjectName(QString::fromUtf8("checkBox_5"));
 
         horizontalLayout->addWidget(checkBox_5);
@@ -85,27 +90,27 @@ public:
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
-        checkBox_6 = new QCheckBox(widget);
+        checkBox_6 = new QCheckBox(layoutWidget);
         checkBox_6->setObjectName(QString::fromUtf8("checkBox_6"));
 
         horizontalLayout_2->addWidget(checkBox_6);
 
-        checkBox_7 = new QCheckBox(widget);
+        checkBox_7 = new QCheckBox(layoutWidget);
         checkBox_7->setObjectName(QString::fromUtf8("checkBox_7"));
 
         horizontalLayout_2->addWidget(checkBox_7);
 
-        checkBox_8 = new QCheckBox(widget);
+        checkBox_8 = new QCheckBox(layoutWidget);
         checkBox_8->setObjectName(QString::fromUtf8("checkBox_8"));
 
         horizontalLayout_2->addWidget(checkBox_8);
 
-        checkBox_9 = new QCheckBox(widget);
+        checkBox_9 = new QCheckBox(layoutWidget);
         checkBox_9->setObjectName(QString::fromUtf8("checkBox_9"));
 
         horizontalLayout_2->addWidget(checkBox_9);
 
-        checkBox_10 = new QCheckBox(widget);
+        checkBox_10 = new QCheckBox(layoutWidget);
         checkBox_10->setObjectName(QString::fromUtf8("checkBox_10"));
 
         horizontalLayout_2->addWidget(checkBox_10);
@@ -113,6 +118,13 @@ public:
 
         verticalLayout->addLayout(horizontalLayout_2);
 
+        label = new QLabel(quartos);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setGeometry(QRect(0, 0, 661, 361));
+        label->setPixmap(QPixmap(QString::fromUtf8(":/imagens/Imagens/quarto.jpg")));
+        label->raise();
+        pushButton->raise();
+        layoutWidget->raise();
 
         retranslateUi(quartos);
 
@@ -133,6 +145,7 @@ public:
         checkBox_8->setText(QApplication::translate("quartos", "Quarto 8", nullptr));
         checkBox_9->setText(QApplication::translate("quartos", "Quarto 9", nullptr));
         checkBox_10->setText(QApplication::translate("quartos", "Quarto 10", nullptr));
+        label->setText(QString());
     } // retranslateUi
 
 };

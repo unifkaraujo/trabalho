@@ -33,7 +33,6 @@ public:
     QListWidget *listWidget;
     QPushButton *btn_cancelarreserva;
     QPushButton *btn_reserva;
-    QLabel *label_18;
     QLabel *label_19;
     QWidget *layoutWidget;
     QVBoxLayout *verticalLayout_4;
@@ -44,6 +43,7 @@ public:
     QLabel *label_30;
     QComboBox *comboBox;
     QPushButton *pushButton;
+    QLabel *label_18;
     QWidget *tab_2;
     QWidget *layoutWidget_2;
     QVBoxLayout *verticalLayout;
@@ -105,10 +105,6 @@ public:
         btn_reserva->setObjectName(QString::fromUtf8("btn_reserva"));
         btn_reserva->setGeometry(QRect(170, 140, 181, 91));
         btn_reserva->setStyleSheet(QString::fromUtf8("background-color:white;"));
-        label_18 = new QLabel(tab);
-        label_18->setObjectName(QString::fromUtf8("label_18"));
-        label_18->setGeometry(QRect(170, 40, 181, 31));
-        label_18->setStyleSheet(QString::fromUtf8("background-color:white;"));
         label_19 = new QLabel(tab);
         label_19->setObjectName(QString::fromUtf8("label_19"));
         label_19->setGeometry(QRect(400, 40, 71, 31));
@@ -170,6 +166,10 @@ public:
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
         pushButton->setGeometry(QRect(400, 240, 71, 23));
         pushButton->setStyleSheet(QString::fromUtf8("background-color:white;"));
+        label_18 = new QLabel(tab);
+        label_18->setObjectName(QString::fromUtf8("label_18"));
+        label_18->setGeometry(QRect(170, 40, 181, 31));
+        label_18->setStyleSheet(QString::fromUtf8("background-color:white;"));
         tabWidget->addTab(tab, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QString::fromUtf8("tab_2"));
@@ -320,7 +320,6 @@ public:
         label->setText(QString());
         btn_cancelarreserva->setText(QApplication::translate("alocacao", "Cancelar reserva", nullptr));
         btn_reserva->setText(QApplication::translate("alocacao", "Reservar", nullptr));
-        label_18->setText(QApplication::translate("alocacao", "<center><b>Reservar quartos:", nullptr));
         label_19->setText(QApplication::translate("alocacao", "<center><b>Quartos\n"
 "<br>disponiveis:", nullptr));
         label_5->setText(QApplication::translate("alocacao", "<b>Digite seu Rg", nullptr));
@@ -337,6 +336,7 @@ public:
         comboBox->setItemText(9, QApplication::translate("alocacao", "10", nullptr));
 
         pushButton->setText(QApplication::translate("alocacao", "Atualizar", nullptr));
+        label_18->setText(QApplication::translate("alocacao", "<center><b>Reservar quartos:", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("alocacao", "Aloca\303\247\303\243o de quartos", nullptr));
         label_2->setText(QApplication::translate("alocacao", "<b>Nome", nullptr));
         label_3->setText(QApplication::translate("alocacao", "<b>Data de nascimento", nullptr));

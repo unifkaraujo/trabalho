@@ -112,23 +112,23 @@ void quartos::on_pushButton_clicked()
     quarto10=ui->checkBox_10->isChecked();
 
     if (quarto1)
-       QMessageBox::about(this,"Hotel Quality",QString::number(quartoshotel.imprime(0)));
+       QMessageBox::about(this,"Hotel Quality","Quarto 1. Preço: "+QString::number(quartoshotel.imprime(0))+" R$");
     if (quarto2)
-       QMessageBox::about(this,"Hotel Quality",QString::number(quartoshotel.imprime(1)));
+       QMessageBox::about(this,"Hotel Quality","Quarto 2. Preço: "+QString::number(quartoshotel.imprime(1))+" R$");
     if (quarto3)
-       QMessageBox::about(this,"Hotel Quality",QString::number(quartoshotel.imprime(2)));
+       QMessageBox::about(this,"Hotel Quality","Quarto 3. Preço: "+QString::number(quartoshotel.imprime(2))+" R$");
     if (quarto4)
-       QMessageBox::about(this,"Hotel Quality",QString::number(quartoshotel.imprime(3)));
+       QMessageBox::about(this,"Hotel Quality","Quarto 4. Preço: "+QString::number(quartoshotel.imprime(3))+" R$");
     if (quarto5)
-       QMessageBox::about(this,"Hotel Quality",QString::number(quartoshotel.imprime(4)));
+       QMessageBox::about(this,"Hotel Quality","Quarto 5. Preço: "+QString::number(quartoshotel.imprime(4))+" R$");
     if (quarto6)
-       QMessageBox::about(this,"Hotel Quality",QString::number(quartoshotel.imprime(5)));
+       QMessageBox::about(this,"Hotel Quality","Quarto 6. Preço: "+QString::number(quartoshotel.imprime(5))+" R$");
     if (quarto7)
-       QMessageBox::about(this,"Hotel Quality",QString::number(quartoshotel.imprime(6)));
+       QMessageBox::about(this,"Hotel Quality","Quarto 7. Preço: "+QString::number(quartoshotel.imprime(6))+" R$");
     if (quarto8)
-       QMessageBox::about(this,"Hotel Quality",QString::number(quartoshotel.imprime(7)));
+       QMessageBox::about(this,"Hotel Quality","Quarto 8. Preço: "+QString::number(quartoshotel.imprime(7))+" R$");
     if (quarto9)
-       QMessageBox::about(this,"Hotel Quality",QString::number(quartoshotel.imprime(8)));
+       QMessageBox::about(this,"Hotel Quality","Quarto 9. Preço: "+QString::number(quartoshotel.imprime(8))+" R$");
     if (quarto10)
-       QMessageBox::about(this,"Hotel Quality",QString::number(quartoshotel.imprime(9)));
+       QMessageBox::about(this,"Hotel Quality","Quarto 10. Preço: "+QString::number(quartoshotel.imprime(9))+" R$");
 }
