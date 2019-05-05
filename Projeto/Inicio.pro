@@ -27,15 +27,18 @@ CONFIG += c++11
 SOURCES += \
         alocacao.cpp \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+        quartos.cpp
 
 HEADERS += \
         alocacao.h \
-        mainwindow.h
+        mainwindow.h \
+        quartos.h
 
 FORMS += \
         alocacao.ui \
-        mainwindow.ui
+        mainwindow.ui \
+        quartos.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

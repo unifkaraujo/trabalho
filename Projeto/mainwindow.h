@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <alocacao.h>
+#include <quartos.h>
 
 namespace Ui {
 class MainWindow;
@@ -21,6 +22,8 @@ private slots:
 
 
     void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
 
 private:
     Ui::MainWindow *ui;

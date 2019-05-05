@@ -226,7 +226,7 @@ reservaHotel usuarior;
 
 
 void alocacao::on_btn_cadastrar_clicked()
-{
+{;
     QString nome = ui->txt_nome->text();
     QString nascimento = ui->txt_nascimento->text();
     QString rg = ui->txt_rg->text();
@@ -234,9 +234,9 @@ void alocacao::on_btn_cadastrar_clicked()
     bool valida = usuario.insere(rg,nome,nascimento);
 
     if (valida)
-        QMessageBox::information(this,"Hotel XXX","Seu cadastro foi feito com sucesso, bem vindo!!");
+        QMessageBox::information(this,"Hotel Quality","Seu cadastro foi feito com sucesso, bem vindo!!");
     else
-        QMessageBox::warning(this,"Hotel XXX","Usuário já cadastrado!!");
+        QMessageBox::warning(this,"Hotel Quality","Usuário já cadastrado!!");
 }
 
 void alocacao::on_btn_consultarcadastro_clicked()
@@ -258,7 +258,7 @@ void alocacao::on_btn_consultarcadastro_clicked()
 
     }
     else
-       QMessageBox::warning(this,"Hotel XXX", "Usuário não cadastrado.");
+       QMessageBox::warning(this,"Hotel Quality", "Usuário não cadastrado.");
 }
 
 void alocacao::on_btn_reserva_clicked()
@@ -271,7 +271,7 @@ void alocacao::on_btn_reserva_clicked()
           bool reserva = usuarior.insere(quarto, rg);
 
           if (reserva) {
-              QMessageBox::information(this,"Hotel XXX","Reserva feita com sucesso");
+              QMessageBox::information(this,"Hotel Quality","Reserva feita com sucesso");
 
               ui->listWidget->clear();
               int disp = usuarior.getQtddisponivel();
@@ -279,11 +279,11 @@ void alocacao::on_btn_reserva_clicked()
                   ui->listWidget->addItem(QString::number(usuarior.imprimeQuartos(i)));
           }
           else
-              QMessageBox::warning(this,"Hotel XXX","Quarto indisponivel");
+              QMessageBox::warning(this,"Hotel Quality","Quarto indisponivel");
 
       }
       else
-          QMessageBox::warning(this,"Hotel XXX","Você ainda não possui cadastro!");
+          QMessageBox::warning(this,"Hotel Quality","Você ainda não possui cadastro!");
 
 }
 
@@ -299,7 +299,7 @@ void alocacao::on_btn_cancelarreserva_clicked()
         bool cancelareserva = usuarior.cancelaReserva(quarto, rg);
 
         if (cancelareserva) {
-            QMessageBox::information(this,"Hotel XXX","Cancelamento feito com sucesso");
+            QMessageBox::information(this,"Hotel Quality","Cancelamento feito com sucesso");
 
             ui->listWidget->clear();
             int disp = usuarior.getQtddisponivel();
@@ -307,12 +307,12 @@ void alocacao::on_btn_cancelarreserva_clicked()
                 ui->listWidget->addItem(QString::number(usuarior.imprimeQuartos(i)));
         }
         else
-            QMessageBox::warning(this,"Hotel XXX","Dados incorretos para cancelamento. Verifique "
+            QMessageBox::warning(this,"Hotel Quality","Dados incorretos para cancelamento. Verifique "
                                                   "se o quarto está disponivel e se rg foi digitado corretamente ");
 
     }
     else
-        QMessageBox::warning(this,"Hotel XXX","Você ainda não possui cadastro!");
+        QMessageBox::warning(this,"Hotel Quality","Você ainda não possui cadastro!");
 
 }
 

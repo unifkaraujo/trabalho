@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_quartos_t {
-    QByteArrayData data[4];
-    char stringdata0[57];
+    QByteArrayData data[5];
+    char stringdata0[61];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -32,13 +32,14 @@ struct qt_meta_stringdata_quartos_t {
 static const qt_meta_stringdata_quartos_t qt_meta_stringdata_quartos = {
     {
 QT_MOC_LITERAL(0, 0, 7), // "quartos"
-QT_MOC_LITERAL(1, 8, 25), // "on_btn_verquartos_clicked"
-QT_MOC_LITERAL(2, 34, 0), // ""
-QT_MOC_LITERAL(3, 35, 21) // "on_pushButton_clicked"
+QT_MOC_LITERAL(1, 8, 24), // "on_checkBox_stateChanged"
+QT_MOC_LITERAL(2, 33, 0), // ""
+QT_MOC_LITERAL(3, 34, 4), // "arg1"
+QT_MOC_LITERAL(4, 39, 21) // "on_pushButton_clicked"
 
     },
-    "quartos\0on_btn_verquartos_clicked\0\0"
-    "on_pushButton_clicked"
+    "quartos\0on_checkBox_stateChanged\0\0"
+    "arg1\0on_pushButton_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -56,11 +57,11 @@ static const uint qt_meta_data_quartos[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   24,    2, 0x08 /* Private */,
-       3,    0,   25,    2, 0x08 /* Private */,
+       1,    1,   24,    2, 0x08 /* Private */,
+       4,    0,   27,    2, 0x08 /* Private */,
 
  // slots: parameters
-    QMetaType::Void,
+    QMetaType::Void, QMetaType::Int,    3,
     QMetaType::Void,
 
        0        // eod
@@ -72,12 +73,10 @@ void quartos::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
         auto *_t = static_cast<quartos *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->on_btn_verquartos_clicked(); break;
         case 1: _t->on_pushButton_clicked(); break;
         default: ;
         }
     }
-    Q_UNUSED(_a);
 }
 
 QT_INIT_METAOBJECT const QMetaObject quartos::staticMetaObject = { {
