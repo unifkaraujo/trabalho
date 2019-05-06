@@ -1,6 +1,6 @@
 # trabalho
 
-Participantes: Kaique Estanislau de Araujo - 222170235 e Bruno Pereira - .
+Participantes: Kaique Estanislau de Araujo - 222170235 e Bruno Pereira - 222170185.
 
 Fomos fazendo upload de todos os arquivos conforme atualizavamos. O projeto completo está na pasta 'Projeto 3.0 - final'.
 
